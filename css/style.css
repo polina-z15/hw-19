@@ -1,0 +1,84 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  width: 85%;
+  max-width: 600px;
+  margin: 50px auto;
+  border: 3px solid #7e7979;
+  overflow: hidden;
+  background-color: #d8fad6;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 27px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 130px;
+}
+
+img {
+  width: 80%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .slider-btn {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
+
+.slider-btn {
+  background-color: #3b723d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn:hover {
+  background-color: #9ffda4;
+  color: black;
+}
+.slide-image {
+  border-radius: 18px;
+
+  margin-left: -43px;
+  transition: 0.3s ease;
+}
